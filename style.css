@@ -1,0 +1,232 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul, ol {
+    list-style: none;
+}
+
+
+/* navbar */
+
+nav.bar {
+    width: 100%;
+    height: 75px;
+    background-image: linear-gradient(#d56a3e, #ebb95a);
+    position: fixed;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999999;
+}
+
+nav.bar ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+
+}
+
+div.logo {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+div.logo img{
+    height: 50px;
+}
+
+nav.bar li {
+    display: inline-block;
+    margin: 0 5px;
+    line-height: 10px;
+}
+
+nav.bar a{
+    color: white;
+    font-weight: bold;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 3px 6px;
+    transition: .5s;
+}
+
+nav.bar a:hover{
+    color: darkgoldenrod;
+    background-color: white;
+    cursor: pointer;
+    
+}
+
+
+
+/* promo babi */
+
+.promo a img{
+    padding-top: 85px;
+    top: 50px;
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    opacity: .8;
+    display: flex;
+    position: relative;
+}
+
+a.promo-text{
+    position: relative;
+    top: -65px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-shadow: 0 0 6px silver;
+    transition: .5s;
+}
+
+a:hover.promo-text{
+    transform: scale(0.9);
+    color: #e9b556;
+    text-shadow: 0 0 10px white;
+}
+
+
+/* strugle menu */
+
+.menu{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 20px;
+
+}
+.menu h3{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.ml{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ml a:hover img{
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: .3s;
+}
+.ml img{
+    margin: 10px;
+    width: 250px;
+    box-shadow: 0 0 3px 2px gray;
+    border-radius: 10px;
+}
+
+
+
+/* tentang */
+
+.about{
+    padding: 10px;
+    background-color: red;
+    color: wheat;
+    line-height: 20px;
+    text-align: justify;
+}
+.about h4{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+
+/* kontak */
+
+.contact{
+    size: 40px;
+    display: flex;
+    float: right;
+    bottom: 5px;
+    right: 5px;
+    position: fixed;
+    z-index: 99999;
+}
+
+.contact a img{
+    width: 50px;
+    transition: .5s;
+}
+
+.contact a:hover img{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+/* footer */
+
+footer{
+    width: 100%;
+    color: silver;
+    background-color: #292929;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-content h3{
+    margin-top: 5px;
+    color: white;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+ul.footer-list a{
+    color: silver;
+    line-height: 20px;
+}
+
+.copyright p{
+    margin-top: 10px;
+    padding: 5px;
+    width: 100%;
+    background-color: black;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+
+/* resposif */
+@media screen and (max-width: 770px) {
+    nav.bar ul{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    nav.bar ul{
+        margin: 0;
+        position: absolute;
+        width: 100%;
+        height: calc (100vh - 50vh);
+        background: #e9b556;
+        left: 0;
+        top: 65px;
+        padding: 10px;
+    }
+}
